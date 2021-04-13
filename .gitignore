@@ -4,6 +4,7 @@
 build
 DerivedData
 project.xcworkspace
+xcshareddata
 xcuserdata
 
 autom4te.cache

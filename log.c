@@ -7,6 +7,7 @@
 //  Licensed under GPLv2: https://www.gnu.org/licenses/gpl-2.0.html
 //
 
+#include "log.h"
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
@@ -15,7 +16,7 @@
 #include <time.h>
 #include <pwd.h>
 #include <limits.h>
-#include <osxfuse/fuse.h>
+#include <fuse/fuse.h>
 
 #define LOGPATH "/Library/Logs/fusehfs.log"
 

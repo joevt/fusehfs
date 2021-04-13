@@ -8,7 +8,7 @@
  * Licensed under GPLv2: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-#include <osxfuse/fuse.h>
+#include <fuse/fuse.h>
 #include <string.h>
 #include <errno.h>
 #include <stdio.h>

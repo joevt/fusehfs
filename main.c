@@ -9,7 +9,7 @@
  * Still licensed under GPLv2: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-#include <osxfuse/fuse.h>
+#include <fuse/fuse.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -18,14 +18,12 @@
 #include <iconv.h>
 #include <libhfs/hfs.h>
 #include "fusefs_hfs.h"
+#include "log.h"
 
 #define FUSEHFS_VERSION "0.1.4"
 //#define DEBUG
 
 extern struct fuse_operations FuseHFS_operations;
-extern int log_to_file();
-extern void log_invoking_command(int argc, char *argv[]);
-extern void log_fuse_call(struct fuse_args *args);
 
 
 struct fusehfs_options options = {

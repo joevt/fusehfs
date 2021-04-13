@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		283BD8AC1149985C003F9F55 /* mount_fusefs_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 283BD8A6114997EB003F9F55 /* mount_fusefs_hfs */; };
-		2842B7D711AFC0100031D3AE /* libfuse_ino64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2842B7D611AFC0100031D3AE /* libfuse_ino64.dylib */; };
-		2861C557113A706600D0447F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861C556113A706600D0447F /* libiconv.dylib */; };
-		286A10A411AF17D7001EEF69 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861C556113A706600D0447F /* libiconv.dylib */; };
+		283BD8AC1149985C003F9F55 /* mount_fusefs_hfs in Resources */ = {isa = PBXBuildFile; fileRef = 283BD8A6114997EB003F9F55 /* mount_fusefs_hfs */; };
+		2842B7D711AFC0100031D3AE /* libfuse.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2842B7D611AFC0100031D3AE /* libfuse.2.dylib */; };
+		2861C557113A706600D0447F /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861C556113A706600D0447F /* libiconv.2.tbd */; };
+		286A10A411AF17D7001EEF69 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861C556113A706600D0447F /* libiconv.2.tbd */; };
 		286A118211AF26C6001EEF69 /* bootblocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 286A118111AF26C6001EEF69 /* bootblocks.h */; };
 		2883E887114974030057A7DC /* suid.c in Sources */ = {isa = PBXBuildFile; fileRef = 28F0DEF91139382300C3718A /* suid.c */; };
 		289FB8E2113BE47600409A62 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = 28F0DEB01139382300C3718A /* block.c */; };
@@ -39,7 +39,7 @@
 		28E2DF9B11495B01002DF364 /* suid.c in Sources */ = {isa = PBXBuildFile; fileRef = 28F0DEF91139382300C3718A /* suid.c */; };
 		28E2DF9C11495B01002DF364 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 28F0DF041139382400C3718A /* version.c */; };
 		28E2E0251149647E002DF364 /* libhfs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 289FB8D9113BE43300409A62 /* libhfs.a */; };
-		28E2E031114964A5002DF364 /* fusefs_hfs.util in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28E2E02111496478002DF364 /* fusefs_hfs.util */; };
+		28E2E031114964A5002DF364 /* fusefs_hfs.util in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E02111496478002DF364 /* fusefs_hfs.util */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		28E2E033114964B1002DF364 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 28E72DB6114956C700084372 /* util.c */; };
 		28E72DD61149586900084372 /* libhfs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 289FB8D9113BE43300409A62 /* libhfs.a */; };
 		5D41D08B197B0DA2007A4650 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D41D089197B0DA2007A4650 /* log.c */; };
@@ -106,8 +106,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 1;
 			files = (
-				283BD8AC1149985C003F9F55 /* mount_fusefs_hfs in CopyFiles */,
-				28E2E031114964A5002DF364 /* fusefs_hfs.util in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +122,8 @@
 
 /* Begin PBXFileReference section */
 		283BD8A6114997EB003F9F55 /* mount_fusefs_hfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mount_fusefs_hfs; sourceTree = "<group>"; };
-		2842B7D611AFC0100031D3AE /* libfuse_ino64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse_ino64.dylib; path = /usr/local/lib/libfuse_ino64.dylib; sourceTree = "<absolute>"; };
-		2861C556113A706600D0447F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		2842B7D611AFC0100031D3AE /* libfuse.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse.2.dylib; path = /usr/local/lib/libfuse.2.dylib; sourceTree = "<absolute>"; };
+		2861C556113A706600D0447F /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = ../MacOSX.sdk/usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		286A118111AF26C6001EEF69 /* bootblocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootblocks.h; sourceTree = "<group>"; };
 		286A11A811AF2A91001EEF69 /* bootblocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootblocks.h; sourceTree = "<group>"; };
 		286A11C611AF2F21001EEF69 /* postinstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinstall.sh; sourceTree = "<group>"; };
@@ -348,7 +346,8 @@
 		28F0DF061139382400C3718A /* xhfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xhfs.h; sourceTree = "<group>"; };
 		28F0DF071139382400C3718A /* xhfs.tcl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xhfs.tcl; sourceTree = "<group>"; };
 		5D41D089197B0DA2007A4650 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
-		639BA9851675AA9E00A9518F /* fuse_wait copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fuse_wait copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633CBB652625410800911BBE /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		639BA9851675AA9E00A9518F /* hfsutils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hfsutils; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD76FB20486AB0100D96B5E /* fusefs_hfs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fusefs_hfs; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD708640EE669A60026C014 /* fusefs_hfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fusefs_hfs.c; sourceTree = "<group>"; };
 		FFD708750EE66DA70026C014 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -374,7 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286A10A411AF17D7001EEF69 /* libiconv.dylib in Frameworks */,
+				286A10A411AF17D7001EEF69 /* libiconv.2.tbd in Frameworks */,
 				28E2E0251149647E002DF364 /* libhfs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,9 +390,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2861C557113A706600D0447F /* libiconv.dylib in Frameworks */,
+				2861C557113A706600D0447F /* libiconv.2.tbd in Frameworks */,
 				289FB925113BE5CE00409A62 /* libhfs.a in Frameworks */,
-				2842B7D711AFC0100031D3AE /* libfuse_ino64.dylib in Frameworks */,
+				2842B7D711AFC0100031D3AE /* libfuse.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +407,8 @@
 				28F0DE211139382300C3718A /* hfsutils-3.2.6 */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				286A11C611AF2F21001EEF69 /* postinstall.sh */,
-				2861C556113A706600D0447F /* libiconv.dylib */,
-				2842B7D611AFC0100031D3AE /* libfuse_ino64.dylib */,
+				2861C556113A706600D0447F /* libiconv.2.tbd */,
+				2842B7D611AFC0100031D3AE /* libfuse.2.dylib */,
 				28A3D9C8122C577900A7869C /* CoreFoundation.framework */,
 			);
 			name = HFSLives;
@@ -419,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				5D41D089197B0DA2007A4650 /* log.c */,
+				633CBB652625410800911BBE /* log.h */,
 				FFD708640EE669A60026C014 /* fusefs_hfs.c */,
 				28B5BB7811B548D400FF8BC7 /* fusefs_hfs.h */,
 				FFD708750EE66DA70026C014 /* main.c */,
@@ -435,7 +435,7 @@
 				28E72DD01149585D00084372 /* hfsck */,
 				28E2E02111496478002DF364 /* fusefs_hfs.util */,
 				28A3D9BA122C56FD00A7869C /* fuse_wait */,
-				639BA9851675AA9E00A9518F /* fuse_wait copy */,
+				639BA9851675AA9E00A9518F /* hfsutils */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -861,7 +861,7 @@
 			);
 			name = hfsutils;
 			productName = fuse_wait;
-			productReference = 639BA9851675AA9E00A9518F /* fuse_wait copy */;
+			productReference = 639BA9851675AA9E00A9518F /* hfsutils */;
 			productType = "com.apple.product-type.tool";
 		};
 		8DD76FA90486AB0100D96B5E /* fusefs_hfs */ = {
@@ -889,14 +889,15 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "FuseHFS" */;
 			compatibilityVersion = "Xcode 3.1";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* HFSLives */;
 			projectDirPath = "";
@@ -918,8 +919,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E2E031114964A5002DF364 /* fusefs_hfs.util in Resources */,
 				28A3D9C1122C570D00A7869C /* fuse_wait in Resources */,
 				28E2DF93114959B2002DF364 /* fusefs_hfs in Resources */,
+				283BD8AC1149985C003F9F55 /* mount_fusefs_hfs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,7 +1051,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1061,6 +1070,7 @@
 					"\"$(SRCROOT)/hfsutils-3.2.6/libhfs\"",
 					"\"/usr/local/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
 					"-D__DARWIN_64_BIT_INO_T=1",
@@ -1076,7 +1086,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
@@ -1087,6 +1103,7 @@
 					"\"$(SRCROOT)/hfsutils-3.2.6/libhfs\"",
 					"\"/usr/local/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
 					"-D__DARWIN_64_BIT_INO_T=1",
@@ -1101,21 +1118,75 @@
 		1DEB928A08733DD80010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/include/;
 			};
 			name = Debug;
 		};
 		1DEB928B08733DD80010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/include/;
 			};
 			name = Release;
 		};
@@ -1123,13 +1194,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_NAME = hfs;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6/libhfs";
@@ -1140,12 +1217,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_NAME = hfs;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6/libhfs";
@@ -1157,11 +1240,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-D__FreeBSD__=10",
@@ -1174,10 +1264,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "-D__FreeBSD__=10";
 				PRODUCT_NAME = fuse_wait;
 				ZERO_LINK = NO;
@@ -1188,12 +1285,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6/";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = fusefs_hfs.util;
 			};
 			name = Debug;
@@ -1202,11 +1306,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6/";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = fusefs_hfs.util;
 				ZERO_LINK = NO;
 			};
@@ -1217,6 +1328,7 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = NO;
@@ -1231,13 +1343,15 @@
 				INSTALL_GROUP = admin;
 				INSTALL_OWNER = "";
 				"INSTALL_OWNER[sdk=*]" = root;
-				INSTALL_PATH = /System/Library/Filesystems;
+				INSTALL_PATH = /Library/Filesystems;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.macpaint.filesystem.hfs;
 				PRODUCT_NAME = fusefs_hfs;
 				WRAPPER_EXTENSION = fs;
 			};
@@ -1249,6 +1363,7 @@
 				ALTERNATE_GROUP = admin;
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1261,13 +1376,15 @@
 				INFOPLIST_FILE = "fusefs_hfs-Info.plist";
 				INSTALL_GROUP = admin;
 				INSTALL_OWNER = "";
-				INSTALL_PATH = /System/Library/Filesystems;
+				INSTALL_PATH = /Library/Filesystems;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.macpaint.filesystem.hfs;
 				PRODUCT_NAME = fusefs_hfs;
 				WRAPPER_EXTENSION = fs;
 				ZERO_LINK = NO;
@@ -1278,11 +1395,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = hfsck;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6";
@@ -1293,10 +1417,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = hfsck;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/hfsutils-3.2.6";
@@ -1308,16 +1439,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-D__FreeBSD__=10",
 				);
-				PRODUCT_NAME = "fuse_wait copy";
+				PRODUCT_NAME = hfsutils;
 			};
 			name = Debug;
 		};
@@ -1325,12 +1459,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "-D__FreeBSD__=10";
-				PRODUCT_NAME = "fuse_wait copy";
+				PRODUCT_NAME = hfsutils;
 				ZERO_LINK = NO;
 			};
 			name = Release;

@@ -1,11 +1,50 @@
 fusehfs
 =======
 
+--------------------------------
+#### Status 4/13/2021
+
+
+Updated to work with [macFUSE 4.1.0](https://osxfuse.github.io/) on macOS 10.15.7.
+
+`mount -t` works but it returns an error from `fuse_wait` after 5 seconds. Instead, use `mount_fusefs_hfs` directly.
+
+
+```
+# Download
+git clone https://github.com/joevt/fusehfs
+
+# Build
+cd fusehfs
+xcodebuild -project FuseHFS.xcodeproj -alltargets
+
+# Install
+[[ -f /System/Library/Filesystems/fusefs_hfs.fs ]] && sudo rm -R /System/Library/Filesystems/fusefs_hfs.fs
+[[ -f /Library/Filesystems/fusefs_hfs.fs ]] && sudo rm -R /Library/Filesystems/fusefs_hfs.fs
+sudo mkdir -p /Library/Filesystems
+sudo cp -R build/Release/fusefs_hfs.fs /Library/Filesystems/
+chown root:wheel /Library/Filesystems/fusefs_hfs.fs
+sudo mkdir -p /usr/local/sbin
+ln -fs /Library/Filesystems/fusefs_hfs.fs/Contents/Resources/fusefs_hfs /usr/local/sbin/mount_fusefs_hfs
+grep -q /usr/local/sbin /etc/paths || sudo sed -e $'1i\\\n/usr/local/sbin\\\n' -i "" /etc/paths
+
+# In a new Terminal.app window, mount an HFS partition of a CD
+sudo mkdir -p "/Volumes/Power Macintosh G3"
+sudo mount_fusefs_hfs /dev/disk14s1s8 "/Volumes/Power Macintosh G3"
+
+# Unmount the HFS partition of a CD
+diskutil unmount "/Volumes/Power Macintosh G3"
+```
+
+--------------------------------
+#### Status 8/5/2014
+
 Goal: update [FuseHFS](http://namedfork.net/fusehfs) to work with [FUSE for OS X](https://osxfuse.github.io/) on 10.9
 
 This FUSE module was designed for MacFUSE, which is no longer maintained and doesn't work on newer versions of OS X. The FUSE for OS X (https://osxfuse.github.io) project picked up the FUSE-on-Mac baton, so that's the way to go from now on. Apple is nothing if not willing to drop support for outdated technologies, so Macs running OS X 10.6 onward can't write to HFS Standard volumes.
 
 The original fusehfs code was published under GPL v2, so this version's code is too.
+
 
 --------------------------------
 #### Release 0.1.4b
@@ -13,6 +52,7 @@ See the [project page](https://thejoelpatrol.github.io/fusehfs/)
 
 --------------------------------
 #### Status 7/19/2014
+
 
 The problem is the [-oallow-other option](https://code.google.com/p/macfuse/wiki/OPTIONS). This option can only be used by privileged users. On older systems, the program mount\_fusefs did in fact run as root, but now mount\_osxfusefs does not, which is for the better. It seems to me that users who are in group 80 should have been able to use this option, but evidently not. Group 80 (admin) is the default "MacFUSE admin" and "OSXFUSE admin" group, so FUSE should run as a member of this group, but it seems to prefer 20 (staff) for some reason. My understanding of the option may be wrong anyway, if wheel is actually required. For now, leaving out this option will allow FuseHFS to work for the user who mounts the volume. Considering the somewhat niche use of this filesystem these days, this is probably OK for now.
 
